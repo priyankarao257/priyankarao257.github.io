@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Priyanka Rao
 description         : >-
-                      Roboticist <\n>
+                      Roboticist \n
                       - Modeling and motion planning of tendon-driven soft continuum robots. 
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : priyankarao257/priyankarao257.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -26,7 +26,7 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : Priyanka Rao
   image             : /images/profile_picture.jpg
-  behance           : your_username
+#  behance           : your_username
 # dribbble          : your_username
   email             : priyankaprakash.rao@mail.utoronto.ca
 #  facebook          : your_username
@@ -35,7 +35,7 @@ author:
 # instagram         : your_username
 # kaggle            : your_username
   linkedin          : priyankarao25
-  medium            : your_username
+#  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
