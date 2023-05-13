@@ -1,8 +1,8 @@
 ---
-title: How to undo your git failure?
-tags: [External Post, Git]
+title: Introduction to modeling tendon-driven continuum robots
+tags: [External Post, Blog]
 style: fill
 color: warning
-description: Using `git reflog` and `git reset` to save your code.
-external_url: https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74
+description:  Introducing a big-picture discussion on the how and the what of modeling TDCRs
+external_url: https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/101/2023/01/06/howto-tdcr-modeling.html
 ---
