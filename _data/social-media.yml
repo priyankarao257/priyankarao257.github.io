@@ -96,7 +96,7 @@ keybase:
   icon  : fab fa-keybase
   color : 66ccff
   
-keybase:
+googlescholar:
   url   : https://scholar.google.com/
-  icon  : <i class="fa-solid fa-graduation-cap"></i>
+  icon  : fa-solid fa-graduation-cap
   color : 66ccff
