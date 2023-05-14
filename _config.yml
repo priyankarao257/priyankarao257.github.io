@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Priyanka Rao
 description         : >-
-                      Roboticist \n
+                      Roboticist |
                       - Modeling and motion planning of tendon-driven soft continuum robots. 
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : priyankarao257/priyankarao257.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
