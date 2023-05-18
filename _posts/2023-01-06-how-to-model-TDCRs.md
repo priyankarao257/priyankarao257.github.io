@@ -1,8 +1,9 @@
 ---
-title: Introduction to modeling tendon-driven continuum robots
+title: OpenCR - Introduction to modeling tendon-driven continuum robots
 tags: [External Post, Blog]
 style: fill
-color: warning
+color: dark
+image : 
 description:  Introducing a big-picture discussion on the how and the what of modeling TDCRs
 external_url: https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/101/2023/01/06/howto-tdcr-modeling.html
 ---

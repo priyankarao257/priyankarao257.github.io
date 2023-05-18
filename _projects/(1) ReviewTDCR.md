@@ -1,7 +1,7 @@
 ---
 name: Modeling of Tendon-driven Continuum Robots
 tools: [MATLAB, C++]
-image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
+image: https://www.frontiersin.org/files/Articles/630245/frobt-07-630245-HTML-r1/image_m/frobt-07-630245-g005.jpg
 description: This project aims to provide an introduction to the modeling of tendon-driven continuum robots to the community, and provides open-source code as well in order to get started
 <!-- external_url: -->
 ---
