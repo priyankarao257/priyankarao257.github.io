@@ -2,8 +2,8 @@
 title: Modeling TDCR contacts - the Kinematic way
 tags: [Modeling, Blog]
 style: fill
-color: dark
-image : 
+color: light
+image : /images/4bar.png
 description:  Introducing a kinematic model proposed by Ashwin et al., 2021, rewritten the PCCA way
 ---
 
