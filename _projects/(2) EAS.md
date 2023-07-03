@@ -16,8 +16,9 @@ A more formal introduction is provided in a post written for the [OpenCR](https:
 
 ## The Why
 
-
-![Motivation](https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/9560720/9560666/9561700/rao1-p7-rao-large.gif)
+<p class="text-center">
+<img src="https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/9560720/9560666/9561700/rao1-p7-rao-large.gif" width="200" height="200" />
+</p>
 
 We already know the constant curvature representation is famous in the soft robotics community because it
 - [x] accurately represents a free moving continuum backbone 
