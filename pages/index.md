@@ -4,3 +4,4 @@ permalink: /
 ---
 
 {% include landing.html %}
+{% include analytics.html %}
