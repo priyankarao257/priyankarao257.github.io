@@ -1,6 +1,6 @@
 ---
 title: Modeling TDCR contacts - the Kinematic way
-tags: [Modeling, Blog]
+tags: [Modeling, PCCA, Contact modeling]
 style: fill
 color: light
 image : /images/4bar.png
