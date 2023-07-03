@@ -12,14 +12,13 @@ description:  Introducing the whimsical piecewise arcs for modeling our robots
 #### Quick context setting :
 This post can be thought of as a follow-up rabbit hole to a previous post written on the OpenCR blog, found [here](https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/101/2023/01/06/howto-tdcr-modeling.html).  We will basically look at using a lumped parameterization using constant curvature arcs to model the backbone. 
 
-<p style="color:grey">
-- _Segment_ : Portion of the backbone (including disks, tendons and what have you nots) starting from the base till point of tendon termination. 
-- _Subsegment_ : Portion of the backbone between two disks. Many subgsegments = 1 segment
+- <p style="color:grey"> _Segment_ : Portion of the backbone (including disks, tendons and what have you nots) starting from the base till point of tendon termination. </p>.
+- <p style="color:grey"> _Subsegment_ : Portion of the backbone between two disks. Many subgsegments = 1 segment </p>
 ![](/images/pcca_2.png)
-- _TDCR_ : tendon-driven conitnuum robot
-- _Lumped parameterization_ : Lumped parameterization discretizes the curve using geometrical assumption such that the curve can be represented by a finite number of parameters. 
-- CC : Constant curvature arcs
-- </p>.
+- <p style="color:grey"> _TDCR_ : tendon-driven conitnuum robot </p>
+- <p style="color:grey"> _Lumped parameterization_ : Lumped parameterization discretizes the curve using geometrical assumption such that the curve can be represented by a finite number of parameters. </p>
+- <p style="color:grey"> CC : Constant curvature arcs </p>
+
 
 
 
