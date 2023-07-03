@@ -14,7 +14,6 @@ This post can be thought of as a follow-up rabbit hole to a previous post writte
 
 - <p style="color:grey"> Segment : Portion of the backbone (including disks, tendons and what have you nots) starting from the base till point of tendon termination. </p>
 - <p style="color:grey"> Subsegment : Portion of the backbone between two disks. Many subsegments = 1 segment </p>
-<img src="https://github.com/priyankarao257/priyankarao257.github.io/blob/main/images/pcca_2.png" height="200" />
 ![](/images/pcca_2.png)
 - <p style="color:grey"> TDCR : tendon-driven conitnuum robot </p>
 - <p style="color:grey"> Lumped parameterization : Lumped parameterization discretizes the curve using geometrical assumption such that the curve can be represented by a finite number of parameters. </p>
@@ -31,7 +30,6 @@ As most students trying to model these robots, I was first introduced to the Con
 ## Breaking the curve
 To model these intermediate forces, the segment is now _broken_ into a series of constant curvature arcs, each representing a subsegment. So now, the backbone no longer has a constant curvature along its length, and can accomodate different forces that make it deviate from its C-shape. We call this the piecewise constant curvature assumption! The beauty of this representation is you can represent the curve discretely, and use the curvature components along the local _x_, _y_, and _z_ axes to represent not just bending, but also twist in the robot. {% include elements/button.html link="" text="Rabbit hole leading to modeling twists using CC arcs [to follow soon]" %}, 
 
-<img src="https://github.com/priyankarao257/priyankarao257.github.io/blob/main/images/pcca_!.png" height="200" />
 ![](/images/pcca_!.png)
 
 ## Questions and Inspiration
