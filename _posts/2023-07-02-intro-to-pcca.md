@@ -24,9 +24,8 @@ This post can be thought of as a follow-up rabbit hole to a previous post writte
 
 As most students trying to model these robots, I was first introduced to the Constant curvature assumption. The premise is very simple - the entire segment is modeled as a constant cuvature arc. There is tonne of material on understanding this better - an extensive survey on different formalization routines [1], blog posts from the lab on introducing the forward kinematics ([link 1](https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/101/2022/12/02/cc-kinematics.html) and [link 2](https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/101/2022/12/09/tdcr-cc-model.html)). The underlying physical meaning is simple. From the Euler Bernoulli theorem we know that applied moment is directly proportional to the curvature. So constant curvature -> constant moment applied -> the TDCR effectively has a constant moment acting on it. 
 
-{% raw %}
-{% include elements/highlight.html text="But what if we want to model more than just a constant moment " %}
-{% endraw %}, like forces from contact interactions, or external weight of cameras and tools ?</mark>
+
+{% include elements/highlight.html text="But what if we want to model more than just a constant moment " %}, like forces from contact interactions, or external weight of cameras and tools ?
 
 ## Breaking the curve
 To model these intermediate forces, the segment is now _broken_ into a series of constant curvature arcs, each representing a subsegment. So now, the backbone no longer has a constant curvature along its length, and can accomodate different forces that make it deviate from its C-shape. We call this the piecewise constant curvature assumption! The beauty of this representation is you can represent the curve discretely, and use the curvature components along the local _x_, _y_, and _z_ axes to represent not just bending, but also twist in the robot. {% include elements/button.html link="" text="Rabbit hole leading to modeling twists using CC arcs [to follow soon]" %}, 
@@ -36,21 +35,13 @@ To model these intermediate forces, the segment is now _broken_ into a series of
 
 ## Questions and Inspiration
 
+All the above raises a very pertinent question - 
+{% include elements/highlight.html text="How much breaking is too much breaking ?" %}
 
-There is an excellent excellent discussion on this discretization in [Dr. Gilbert's survey paper](https://www.frontiersin.org/articles/10.3389/frobt.2021.732643/full) [2] that I would recommend reading (see page 5 for perspectives). All the 
+There is an excellent excellent discussion on this discretization in [Dr. Gilbert's survey paper](https://www.frontiersin.org/articles/10.3389/frobt.2021.732643/full) [2] that I would recommend reading (see page 5 for perspectives). Its obvious that the less number of arcs used to approximate, the less accurate the modeled curve. The errpr reduces as we increase the number of arcs. There is also a study on variation of accuracy with increasing number of arcs in the paper. (see figure 4).
+
+Increasing the number of arcs also means an increase in the computational effort. And instead of only focusing on increasing the number of arcs, can we enforce constraints on the curvature variation of these arcs to reduce the computational complexity ? This question inspired our next work. If we had a very simple load at the tip (like from a camera or a hanging weight), could we get away by using a simple linear curvature approximation to model the robot ? 
  {% include elements/button.html link="https://priyankarao257.github.io/projects/2-eas" text="Rabbit hole to using linear/Euler curves to limit curvature variation" %}
-
-
-## Equivalence of the 4-bar representation and CC arcs
-There are of course many ways to represent just the piecewise arcs as well [1]. One of these approaches that caught my eye was the 4-bar representation proposed by
-If we look at the planar case, th
-
-
-
-While studying different backbone representations for our survey paper [cue : shameless plug], I came across this very interesting representation where the portion of the robot between two disks (hereon referred to as a subsegment) is modeled as a _series of four bar mechanisms stacked over each other_. A rough sketch of one such subsegment being approximated by a 4-bar linkage (marked in red) is shown below.
-
-![](/images/4bar.png)*Sketch of 4-bar linkage imposed on a TDCR*
-
 
 
 ## To read, read, and read
