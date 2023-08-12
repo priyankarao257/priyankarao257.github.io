@@ -1,6 +1,6 @@
 ---
 title: Modeling TDCR contacts - the Kinematic way
-tags: [Modeling, PCCA, Contact modeling]
+tags: [Modeling, PCCA, Contact modeling, CC]
 style: fill
 color: light
 image : /images/4bar.png
@@ -13,15 +13,17 @@ While studying different backbone representations for our survey paper [cue : s
 
 ![](/images/4bar.png)*Sketch of 4-bar linkage imposed on a TDCR*
 
+
+Anyway I digress. The point of this blogpost is to rewrite the proposed model using the PCCA model, introduced here - {% include elements/button.html link="https://priyankarao257.github.io/projects/2-eas" text="Rabbit hole to backbone representation using piecewise constant curvature arcs" %}, to instead model contacts. 
+
 ## Basic principle behind the forward kinematic modeling
 
-The basic principle behind forward kinematic modeling is that, during deformation caused by loads or environment, the robot's static equilibrium shape is the one that minimizes the strain energy. According to the paper, when the robot is discretized into subsegments of equal length, the equilibrium configuration is one that minimizes the angle Ⲫ of each subsegment.
+The basic principle behind forward kinematic modeling is that, during deformation caused by loads or environment, the robot's static equilibrium shape is the one that minimizes the strain energy. According to the paper, when the robot is discretized into subsegments of equal length, the equilibrium configuration is one that minimizes the angle θ of each subsegment (marked as Ⲫ in the diagram) of each subsegment. For the PCCA representation, this translates to simply minimizing the angle subtended by each arc.
 
-For a given tendon length, the above principle can be formulated as an optimization problem that minimizes these angles, such that the resulting tendon length is equal to the required length (see [1] for more details).
+For a given tendon length, the above principle can be formulated as an optimization problem that minimizes these angles, with the equality constraint the resulting tendon length is equal to the required length (see [1] for more details).
 
-As we already know, during deformation by loads / environment, the robot's static equilibrium shape is one which minimizes the strain energy. The paper states that for this representation, when discretized into subsegments of equal length, this translates to a configuration that minimizes the angle Ⲫ of each subsegment.
+## Optimization problem
 
-For a given tendon length, the above can be written as an optimization problem that minimizes these angles, such that the resulting tendon length is equal to the required length.
-
+![](https://latex.codecogs.com/svg.image?%5Cmin%7B%5Csum%5En_j%5Cmathbf%7B%5Ctheta_j%7D%7D%5E2%20)
 [1] K. Ashwin, S. K. Mahapatra, and A. Ghosal, "Profile and contact force estimation of cable-driven
 continuum robots in presence of obstacles," Mechanism and Machine Theory, vol. 164, p. 104404, 2021.

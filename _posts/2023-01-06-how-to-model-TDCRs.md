@@ -1,6 +1,6 @@
 ---
 title: OpenCR - Introduction to modeling tendon-driven continuum robots
-tags: [External Post, Blog]
+tags: [OpenCR Blog]
 style: fill
 color: dark
 image : 
