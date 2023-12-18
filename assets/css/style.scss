@@ -1,20 +1,11 @@
  ---
  ---
-<style>
-    h3 {
-        color: red;
-    }
-    h4 {
-        color: red;
-    }
-    h5 {
-        color: red;
-    }
-    h1 {
-        color: red;
-    }
-    h2 {
-        color: red;
-    }
-</style>
+ body {
+  font-family: 'Raleway', serif;
+  }
+
+h1, h2, h3, h4, h5, .site-title, .site-nav {
+  font-family: 'Arvo', sans-serif, color: navy;
+}
+
  @import "portfolYOU";
