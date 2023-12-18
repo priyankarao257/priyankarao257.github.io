@@ -4,6 +4,20 @@ tools: [Modeling]
 image: https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7083369/10102643/10093050/rao1-3264869-small.gif
 description: A model proposed for a locking based actuation for TDCR
 ---
+<style>
+    h3 {
+        color: blue;
+    }
+    h4 {
+        color: blue;
+    }
+    h1 {
+        color: blue;
+    }
+    h2 {
+        color: blue;
+    }
+</style>
 
 # Modeling of Rod-based locking in TDCRs
 
@@ -12,7 +26,7 @@ description: A model proposed for a locking based actuation for TDCR
 A single segment TDCR is limited because :
 1. It can bend only in **limited shapes** : A single segment TDCR can usually only bend in a C shape as shown on the right. To achieve more complex shapes, a common solution is to stack multiple segments on top of each other as shown below
 
-<img src="/images/multiple_segments.gif" width="200" class="rotate90" />
+<img src="/images/multiple_segments.gif" width="200" style="transform: rotate(90deg)" />
 
 
 However this can lead to quite complex actuation units and control. 
