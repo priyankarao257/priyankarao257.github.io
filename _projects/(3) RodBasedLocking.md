@@ -8,18 +8,19 @@ description: A model proposed for a locking based actuation for TDCR
 # Modeling of Rod-based locking in TDCRs
 
 #### Quick context setting :
+<img align="right" src="/images/c.gif">
 A single segment TDCR is limited because :
-<p>1. It can bend only in **limited shapes** : A single segment TDCR can usually only bend in a C shape as shown on the right :<img align="right" src="/images/c.gif">. To achieve more complex shapes, a common solution is to stack multiple segments on top of each other as shown on the left
-	<p class="text-center">
-<img src="/images/multiple_segments.gif" width="200" class="rotate90"/>
-</p>
+1. It can bend only in **limited shapes** : A single segment TDCR can usually only bend in a C shape as shown on the right. To achieve more complex shapes, a common solution is to stack multiple segments on top of each other as shown below
+
+<img src="/images/multiple_segments.gif" width="200" class="rotate90" />
+
 
 However this can lead to quite complex actuation units and control. 
 Additionally this segment has limited stiffness.
-</p> 
 
-<p>2. It has **limited stiffness** : The intrinsic compliance of TDCRs is a double-edged sword. While it allows for remarkable flexibility, it often falls short in tasks requiring rigidity. To tackle this, innovative solutions like layer jamming and stiffening sheaths have been explored, enabling these robots to alternate between stiff and compliant states.
-</p> 
+
+2. It has **limited stiffness** : The intrinsic compliance of TDCRs is a double-edged sword. While it allows for remarkable flexibility, it often falls short in tasks requiring rigidity. To tackle this, innovative solutions like layer jamming and stiffening sheaths have been explored, enabling these robots to alternate between stiff and compliant states.
+
 
 ##### Solution :
 The exciting development in this field is the integration of locking mechanisms into TDCR design. My colleague, Chloe Pogue, presents a breakthrough in our recent work - a wirelessly actuated, magnetically controlled locking mechanism. Check out her presentation in this video:
