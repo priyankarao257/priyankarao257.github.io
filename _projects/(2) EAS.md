@@ -2,8 +2,7 @@
 name: Using Euler-Arc Splines to model TDCRs
 tools: [Modeling, TDCR]
 image: https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/9560720/9560666/9561700/rao1-p7-rao-large.gif
-description: We propose the use of EulerArcSplines to represent these flexible robots
-css: /styles.css
+description: We propose the use of EulerArcSplines to represent these flexible robot
 ---
 # Euler Arc Splines for TDCRs
 
