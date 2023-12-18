@@ -3,21 +3,9 @@ name: Modeling of Rod-based locking in tendon-driven Continuum Robots
 tools: [Modeling]
 image: https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7083369/10102643/10093050/rao1-3264869-small.gif
 description: A model proposed for a locking based actuation for TDCR
+css: /styles.css
 ---
-<style>
-    h3 {
-        color: blue;
-    }
-    h4 {
-        color: blue;
-    }
-    h1 {
-        color: blue;
-    }
-    h2 {
-        color: blue;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
 
 # Modeling of Rod-based locking in TDCRs
 
