@@ -18,7 +18,7 @@ While studying different backbone representations for our survey paper [cue : s
 <!-- ![](/images/4bar.png)*Sketch of 4-bar linkage imposed on a TDCR* -->
 
 
-While interesting in its own right, the point of this blogpost is to rewrite the proposed model using the PCCA model, introduced here - {% include elements/button.html link="https://priyankarao257.github.io/projects/2-eas" text="Rabbit hole to backbone representation using piecewise constant curvature arcs" %}, to instead model contacts. The backbone is instead divided into a series of constant curvartures that each subtend an angle θ_j. Do note that angles Ⲫ and θ essentially denote the same value. 
+While interesting in its own right, the point of this blogpost is to rewrite the proposed model using the PCCA model, introduced here - {% include elements/button.html link="https://priyankarao257.github.io/blog_modeling/intro-to-pcca" text="Rabbit hole to backbone representation using piecewise constant curvature arcs" %}, to instead model contacts. The backbone is instead divided into a series of constant curvartures that each subtend an angle θ_j. Do note that angles Ⲫ and θ essentially denote the same value. 
 
 ## Basic principle behind the forward kinematic modeling
 

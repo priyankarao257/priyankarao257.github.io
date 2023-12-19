@@ -2,12 +2,12 @@
 name: Using Euler-Arc Splines to model TDCRs
 tools: [Modeling, TDCR]
 image: https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/9560720/9560666/9561700/rao1-p7-rao-large.gif
-description: We propose the use of EulerArcSplines to represent these flexible robot
+description: We propose the use of EulerArcSplines to represent TDCRs
 ---
 # Euler Arc Splines for TDCRs
 
 #### Quick context setting :
-A previous follow-up and gentle introduction to curve discretization using PCCA can be found [here](/posts/2023-07-02-intro-to-pcca). Might be a good read if you haven't already arrived here through the rabbit hole buttons.
+A previous follow-up and gentle introduction to curve discretization using PCCA can be found [here](https://priyankarao257.github.io/blog_modeling/intro-to-pcca). Might be a good read if you haven't already arrived here through the rabbit hole buttons.
 A more formal introduction is provided in a post written for the [OpenCR](https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/) project. 
 {% include elements/button.html link="https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/research/2023/01/10/euler-curves.html" text="Link to OpenCR post" %}
 
