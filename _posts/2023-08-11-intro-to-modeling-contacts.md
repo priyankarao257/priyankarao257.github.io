@@ -47,7 +47,7 @@ For all the detailed stuff, you can check out reference [1]. It's got all the ni
 ![](https://latex.codecogs.com/svg.image?l-l^*=0)
 Do note that the notation has been siplified to make it more digestible. The function f_j(x), denotes the definition of an obstacle boundary and x denotes a set of points lying on the robot. This inequality constraint essentially ensures that the robot lies outsdie an obstacle. It ensures that the value of the function "f" for points on the robot doesn't dip below 0, which could indicate that the robot is colliding/penetrating an obstacle. The index k denotes the kth obstacle among m obstacles.
 
-There's another constraint involving "l" and "$l^{*}$." These represent lengths. You want the difference between "l" and "$l^*$" to be 0. This equality constraint makes sure that the length you calculate for a certain shape ("l") matches the desired input length ("$l^*$").
+There's another constraint involving "l" and $l^{\*}$. These represent desired and calculated lengths of the actuated tendon. You want the difference between "l" and "$l^{\*}$" to be 0. This equality constraint makes sure that the length you calculate for a certain shape ("l") matches the desired input length ("$l^{\*}$").
 
 The above can be solved using MATLAB's fmincon function. It is a very useful tool that allows you to define the function to be optimized, along with the linear and non-linear constraints. 
 

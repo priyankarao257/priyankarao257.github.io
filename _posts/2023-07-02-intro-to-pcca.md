@@ -42,7 +42,24 @@ Increasing the number of arcs also means an increase in the computational effort
  {% include elements/button.html link="https://priyankarao257.github.io/projects/2-eas" text="Rabbit hole to using linear/Euler curves to limit curvature variation" %}
 
 
+## Modeling of TDCRs using this representation
+PCCA can be used to develop both static and kinematic models for TDCRs. The kinematic model (although somewhat limited) has been described [here](https://priyankarao257.github.io/blog_modeling/intro-to-modeling-contacts). 
+
+The static model follows the Hooke's law, which states that the resultant curvatures (along all three axes) of a subsegment is directly proportional to the resultant moment in that subsegment. I found the linked [paper](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiI796s95qDAxVn8TgGHSa7DBAQFnoECAwQAQ&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0736584516303817&usg=AOvVaw2t5HVcIfDDu4oiqXeSiFgH&opi=89978449) very succintly written and easy to follow for a 2D model. Once 2D is conquered, you can look at extending to 3D by reading [4] and [5]. 
+
+The model has also been implemented as a part of our survey paper, and its MATLAB implementation can be found below, under `CCsub`.
+
+{% include elements/button.html link="https://github.com/ContinuumRoboticsLab/tdcr-modeling/tree/master/matlab/Models/CCsub text="Github repo for model implementation in MATLAB" %}.
+
+
+
 ## To read, read, and read
 [1] R. J. Webster and B. A. Jones, “Design and kinematic modeling of constant curvature continuum robots: A review,” Int. J. Rob. Res., vol. 29, no. 13, pp. 1661–1683, Nov. 2010, doi: 10.1177/0278364910368147.
 
 [2] Gilbert HB (2021) On the Mathematical Modeling of Slender Biomedical Continuum Robots. Front. Robot. AI 8:732643. doi: 10.3389/frobt.2021.732643
+
+[3] H. Yuan and Z. Li, “Workspace analysis of cable-driven continuum manipulators based on static model,” Robot. Comput. Integr. Manuf., vol. 49, pp. 240–252, 2018, doi: 10.1016/j.rcim.2017.07.002.
+
+[4] H. Yuan, L. Zhou, and W. Xu, “A comprehensive static model of cable-driven multi-section continuum robots considering friction effect,” Mech. Mach. Theory, vol. 135, pp. 130–149, May 2019, doi: 10.1016/j.mechmachtheory.2019.02.005.
+
+[5] W. S. Rone and P. Ben-Tzvi, “Continuum robot dynamics utilizing the principle of virtual power,” IEEE Trans. Robot., vol. 30, no. 1, pp. 275–287, 2014, doi: 10.1109/TRO.2013.2281564.
