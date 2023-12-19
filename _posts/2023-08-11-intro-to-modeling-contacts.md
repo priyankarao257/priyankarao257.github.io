@@ -7,7 +7,15 @@ image : /images/4bar.png
 description:  Introducing a kinematic model proposed by Ashwin et al., 2021, rewritten the PCCA way
 ---
 
-# Modeling TDCR contacts - the Kinematic way
+<script>
+    MathJax = {
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+    </script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
 
 While studying different backbone representations for our survey paper [cue : shameless plug], I came across this very interesting representation where the portion of the robot between two disks (hereon referred to as a subsegment) is modeled as a _series of four bar mechanisms stacked over each other_. A rough sketch of one such subsegment being approximated by a 4-bar linkage (marked in red) is shown below.
 
@@ -36,10 +44,10 @@ For all the detailed stuff, you can check out reference [1]. It's got all the ni
 ![](https://latex.codecogs.com/svg.image?%5Cmin%7B%5Csum%5En_j%5Cmathbf%7B%5Ctheta_j%7D%7D%5E2%20)
 
 ![](https://latex.codecogs.com/svg.image?\mathbf{f_k}(\mathbf{X})\geq0,\forall&space;k\in[0,m])
-![](https://latex.codecogs.com/svg.image?l-l^*=0),
+![](https://latex.codecogs.com/svg.image?l-l^*=0)
 Do note that the notation has been siplified to make it more digestible. The function f_j(x), denotes the definition of an obstacle boundary and x denotes a set of points lying on the robot. This inequality constraint essentially ensures that the robot lies outsdie an obstacle. It ensures that the value of the function "f" for points on the robot doesn't dip below 0, which could indicate that the robot is colliding/penetrating an obstacle. The index k denotes the kth obstacle among m obstacles.
 
-There's another constraint involving "l" and "l-star." These represent lengths. You want the difference between "l" and "l-star" to be 0. This equality constraint makes sure that the length you calculate for a certain shape ("l") matches the desired input length ("l-star").
+There's another constraint involving "l" and "$l^*$." These represent lengths. You want the difference between "l" and "$l^*$" to be 0. This equality constraint makes sure that the length you calculate for a certain shape ("l") matches the desired input length ("$l^*$").
 
 The above can be solved using MATLAB's fmincon function. It is a very useful tool that allows you to define the function to be optimized, along with the linear and non-linear constraints. 
 
