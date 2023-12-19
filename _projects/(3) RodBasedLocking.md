@@ -33,9 +33,7 @@ This innovative mechanism can be miniaturized and attached to the robot, enablin
 
 ### Modeling the above phenomenon
 
-While we focused on the mechanism design, my project was primarily concerned with modeling the behaviour of the TDCR on locking.
-
-nds of a segment. This action introduces a pivotal length constraint in each of these rods. Our model posits that this length constraint generates a resistive moment within the locked portion, counteracting externally applied forces. With this moment, the robot can be modeled as a regular TDCR and its constitutive equations solved for. 
+While the previous work focused on the mechanism design, my project was primarily concerned with modeling the behaviour of the TDCR on locking. The locking is achieved by clamping the passive backbones at both ends of a segment. This action introduces a pivotal length constraint in each of these rods. Our model posits that this length constraint generates a resistive moment within the locked portion, counteracting externally applied forces. With this moment, the robot can be modeled as a regular TDCR and its constitutive equations solved for. 
 
 For those keen on diving into the technicalities and the comprehensive model, our findings and the detailed mathematical framework are thoroughly documented in our recent publication : {% include elements/button.html link="https://ieeexplore.ieee.org/abstract/document/10093050" text="Link to the RAL paper" %} 
 
