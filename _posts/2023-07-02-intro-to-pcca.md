@@ -49,9 +49,7 @@ The static model follows the Hooke's law, which states that the resultant curvat
 
 The model has also been implemented as a part of our survey paper, and its MATLAB implementation can be found below, under `CCsub`.
 
-{% include elements/button.html link="https://github.com/ContinuumRoboticsLab/tdcr-modeling/tree/master/matlab/Models/CCsub text="Github repo for model implementation in MATLAB" %}.
-
-
+ {% include elements/button.html link="https://github.com/ContinuumRoboticsLab/tdcr-modeling/tree/master/matlab/Models/CCsub" text="Rabbit hole to using linear/Euler curves to limit curvature variation" %}
 
 ## To read, read, and read
 [1] R. J. Webster and B. A. Jones, “Design and kinematic modeling of constant curvature continuum robots: A review,” Int. J. Rob. Res., vol. 29, no. 13, pp. 1661–1683, Nov. 2010, doi: 10.1177/0278364910368147.
