@@ -7,15 +7,15 @@ image : /images/4bar.png
 description:  Introducing a kinematic model proposed by Ashwin et al., 2021, rewritten the PCCA way
 ---
 
-<script>
-    MathJax = {
-        tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-    };
-    </script>
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script> 
 
 While studying different backbone representations for our survey paper [cue : shameless plug], I came across this very interesting representation where the portion of the robot between two disks (hereon referred to as a subsegment) is modeled as a _series of four bar mechanisms stacked over each other_. A rough sketch of one such subsegment being approximated by a 4-bar linkage (marked in red) is shown below.
 
@@ -26,7 +26,7 @@ While studying different backbone representations for our survey paper [cue : s
 <!-- ![](/images/4bar.png)*Sketch of 4-bar linkage imposed on a TDCR* -->
 
 
-While interesting in its own right, the point of this blogpost is to rewrite the proposed model using the PCCA model, introduced here - {% include elements/button.html link="https://priyankarao257.github.io/blog_modeling/intro-to-pcca" text="Rabbit hole to backbone representation using piecewise constant curvature arcs" %}, to instead model contacts. The backbone is instead divided into a series of constant curvartures that each subtend an angle θ_j. Do note that angles Ⲫ and θ essentially denote the same value. 
+While interesting in its own right, the point of this blogpost is to rewrite the proposed model using the PCCA model, introduced here - {% include elements/button.html link="https://priyankarao257.github.io/blog_modeling/intro-to-pcca" text="Rabbit hole to backbone representation using piecewise constant curvature arcs" %}, to instead model contacts. The backbone is instead divided into a series of constant curvartures that each subtend an angle $\theta_j$. Do note that angles Ⲫ and θ essentially denote the same value. 
 
 ## Basic principle behind the forward kinematic modeling
 
@@ -47,7 +47,7 @@ For all the detailed stuff, you can check out reference [1]. It's got all the ni
 ![](https://latex.codecogs.com/svg.image?l-l^*=0)
 Do note that the notation has been siplified to make it more digestible. The function f_j(x), denotes the definition of an obstacle boundary and x denotes a set of points lying on the robot. This inequality constraint essentially ensures that the robot lies outsdie an obstacle. It ensures that the value of the function "f" for points on the robot doesn't dip below 0, which could indicate that the robot is colliding/penetrating an obstacle. The index k denotes the kth obstacle among m obstacles.
 
-There's another constraint involving "l" and "$l^*$." These represent lengths. You want the difference between "l" and "$l^*$" to be 0. This equality constraint makes sure that the length you calculate for a certain shape ("l") matches the desired input length ("$l^*$").
+There's another constraint involving "l" and "$l^{*}$." These represent lengths. You want the difference between "l" and "$l^*$" to be 0. This equality constraint makes sure that the length you calculate for a certain shape ("l") matches the desired input length ("$l^*$").
 
 The above can be solved using MATLAB's fmincon function. It is a very useful tool that allows you to define the function to be optimized, along with the linear and non-linear constraints. 
 
