@@ -39,7 +39,7 @@ For those keen on diving into the technicalities and the comprehensive model, ou
 
 ### Innovating TDCR Design with Triple Locking Mechanisms: A Study of Flexibility and Stiffness
 
-An interesting proposition to place three of these locking mechanism on a segment design. Lets say these three mechanisms are placed at, 1) the bottom (disk 0), 2) the end disk (disk n), and 3) somewhere in the middle (disk d). All these three mechanims can be independently actuated. Doing so offers an interesting control over the robots stiffness. 
+An interesting proposition would be to place three of these locking mechanism on a segment design. Lets say these three mechanisms are placed at, 1) the bottom (disk 0), 2) the end disk (disk n), and 3) somewhere in the middle (disk d). All these three mechanims can be independently actuated. Doing so offers an interesting control over the robots stiffness. 
 
 By selectively engaging these locks, we can lock either the distal portion (between disks d and n) or the proximal portion (between disks 0 and d) of the segment. What's particularly interesting is that these TDCRs can achieve the same shape with different sequences of tendon tensions, yet exhibit different levels of stiffness depending on which portion is locked. With three locking mechanisms alternatively actuated, the robot could essentially achieve three values of stiffness.
 
@@ -52,3 +52,5 @@ By selectively engaging these locks, we can lock either the distal portion (betw
 
 The paper also studies how the stiffness varies when the value of d ranges from 0 to n, seeking to inform the robot behaviour during locking. 
 
+
+<sub>The TDCR animations were created by Bhushanraaj Kutte.</sub>
