@@ -7,7 +7,7 @@ image : /images/4bar.png
 description:  Introducing the whimsical piecewise arcs for modeling our robots
 ---
 
-<!-- # Breaking the curve with PCCA (Piecewise Constant Curvature Assumption) -->
+# Breaking the curve with PCCA (Piecewise Constant Curvature Assumption)
 
 #### Quick context setting :
 This post can be thought of as a follow-up rabbit hole to a previous post written on the OpenCR blog, found [here](https://www.cs.toronto.edu/~jbk/opencontinuumrobotics/101/2023/01/06/howto-tdcr-modeling.html).  We will basically look at using a lumped parameterization using constant curvature arcs to model the backbone. 
